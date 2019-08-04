@@ -1,35 +1,125 @@
 .container {
-  display: flex;
-  text-align: center;
+  position: relative;
 }
 
 .text {
-  display: flex;
-  flex-direction: column;
+  top: 25%;
+  left: 15%;
   position: absolute;
-  color: white;
-  font-size: 2em;
-  padding: 5em 10em;
 }
 
 .text-content {
-  margin-bottom: 1em;
+  display: flex;
+  justify-content: space-around;
+  height: 10vh;
+  font-size: 2em;
+  color: white;
 }
 
 .button {
+  display: flex;
   cursor: pointer;
   border-style: none;
   border-radius: 0.3em;
   background: lightblue;
-  padding: 0.7em;
+  padding: 0.3em;
   font-size: 1em;
-  margin-top: 1em;
   text-decoration: none;
+  font-size: 1.3em;
   color: rgb(4, 108, 150);
 }
 
-.img-display {
-  overflow: hidden;
-  width: 100%;
-  max-height: 90vh;
+.mobile {
+  display: none;
+}
+
+@media only screen and (min-width: 2560px) {
+  .text {
+    top: 20%;
+    left: 10%;
+    position: absolute;
+  }
+
+  .text-content {
+    font-size: 4em;
+    height: 18vh;
+  }
+
+  .button {
+    font-size: 1.7em;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .text {
+    top: 20%;
+    left: 10%;
+    position: absolute;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .text {
+    top: 20%;
+    left: 5%;
+    position: absolute;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .text {
+    top: 10%;
+    left: 3%;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mobile {
+    display: block;
+  }
+  .container {
+    display: none;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    height: 15%;
+    width: 100%;
+    justify-content: center;
+    top: 7%;
+  }
+  .text-content {
+    font-size: 1.7em;
+  }
+  .button {
+    font-size: 1.2em;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .text {
+    top: 5%;
+    height: 13%;
+  }
+  .text-content {
+    font-size: 1.2em;
+  }
+  .button {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .text {
+    top: 5%;
+    height: 9%;
+  }
+  .text-content {
+    font-size: 1.2em;
+  }
+  .button {
+    font-size: 1em;
+  }
 }

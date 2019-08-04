@@ -31,3 +31,19 @@
 .nav-items:hover {
   font-weight: bold;
 }
+
+@media screen and (max-width: 768px) {
+  .nav {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .title {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+  }
+}
