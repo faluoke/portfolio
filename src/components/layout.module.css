@@ -1,0 +1,12 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  font-family: "Fjalla One", sans-serif;
+  position: relative;
+  min-height: 100%;
+}

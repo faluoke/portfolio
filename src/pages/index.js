@@ -1,21 +1,39 @@
-import React from "react"
-import { Link } from "gatsby"
-
+import React, { Component } from "react"
+import indexStyle from "./index.module.css"
+import programming from "../images/programming.jpg"
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import Project from "../components/project"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+class IndexPage extends Component {
+  render() {
+    return (
+      <Layout>
+        <SEO title="Home" />
+        <div className={indexStyle.container}>
+          <div className={indexStyle.text}>
+            <p className={indexStyle.textContent}>Hi, I am Faluoke</p>
+            <p className={indexStyle.textContent}>A Developer</p>
+            <p className={indexStyle.textContent}>
+              Currently living in Salt Lake City
+            </p>
+            <button className={indexStyle.button}>
+              <a className={indexStyle.button} href="#projects">
+                Go to Projects
+              </a>
+            </button>
+          </div>
+
+          <img
+            src={programming}
+            alt="programming"
+            className={indexStyle.imgDisplay}
+          />
+        </div>
+        <Project />
+      </Layout>
+    )
+  }
+}
 
 export default IndexPage
