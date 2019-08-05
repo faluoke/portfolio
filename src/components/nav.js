@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import navStyle from "./nav.module.css"
 
 const Nav = () => (
@@ -6,25 +7,25 @@ const Nav = () => (
     <div>
       <nav className={navStyle.nav}>
         <div>
-          <a href="#" className={navStyle.title}>
+          <Link to="/" className={navStyle.title}>
             <h1>Portfolio</h1>
-          </a>
+          </Link>
         </div>
         <ul className={navStyle.navList}>
           <li>
-            <a href="#" className={navStyle.navItems}>
+            <Link to="/" className={navStyle.navItems}>
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#projects" className={navStyle.navItems}>
+            <Link to="/#projects" className={navStyle.navItems}>
               Projects
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className={navStyle.navItems}>
+            <Link to="/resume" className={navStyle.navItems}>
               Resume
-            </a>
+            </Link>
           </li>
           <li>
             <a href="#" className={navStyle.navItems}>

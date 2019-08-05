@@ -13,16 +13,24 @@
 .project4 {
   grid-area: main4;
 }
+.project5 {
+  grid-area: main5;
+}
 
 .container {
   display: grid;
   grid-template-areas:
-    "header header"
-    "main main2"
-    "main3 main4";
-  grid-gap: 100px;
+    ". header header header ."
+    "main . main2 . main3"
+    ". main4 . main5 .";
+  grid-row-gap: 2em;
   text-align: center;
   font-size: 1.2em;
+}
+
+.img {
+  width: 320px;
+  height: 240px;
 }
 
 .link {
