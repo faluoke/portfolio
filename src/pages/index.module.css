@@ -91,7 +91,8 @@
     display: block;
   }
   .text-content {
-    font-size: 1em;
+    font-size: 1.2em;
+    height: 5vh;
   }
 
   .button {
