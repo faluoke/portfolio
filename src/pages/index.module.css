@@ -3,8 +3,11 @@
 }
 
 .text {
-  top: 25%;
-  left: 15%;
+  display: grid;
+  height: 20vh;
+  top: 20%;
+  margin: 0 auto;
+  width: 100%;
   position: absolute;
 }
 
@@ -12,8 +15,8 @@
   display: flex;
   justify-content: space-around;
   height: 10vh;
-  font-size: 2em;
-  color: white;
+  font-size: 3em;
+  color: rgb(255, 255, 255);
 }
 
 .button {
@@ -23,103 +26,75 @@
   border-radius: 0.3em;
   background: lightblue;
   padding: 0.3em;
-  font-size: 1em;
   text-decoration: none;
-  font-size: 1.3em;
+  font-size: 1.5em;
   color: rgb(4, 108, 150);
 }
 
-.mobile {
-  display: none;
-}
-
-@media only screen and (min-width: 2560px) {
-  .text {
-    top: 20%;
-    left: 10%;
-    position: absolute;
-  }
-
+@media only screen and (min-width: 2100px) {
   .text-content {
-    font-size: 4em;
+    font-size: 4.3em;
     height: 18vh;
   }
 
   .button {
-    font-size: 1.7em;
+    font-size: 2em;
   }
 }
 
-@media only screen and (max-width: 1250px) {
-  .text {
-    top: 20%;
-    left: 10%;
-    position: absolute;
+@media only screen and (max-width: 2100px) {
+  .text-content {
+    font-size: 3.9em;
+    height: 15vh;
+  }
+
+  .button {
+    font-size: 1.5em;
   }
 }
 
-@media only screen and (max-width: 1024px) {
-  .text {
-    top: 20%;
-    left: 5%;
-    position: absolute;
+@media only screen and (max-width: 1440px) {
+  .text-content {
+    font-size: 3.1em;
+    height: 10vh;
+  }
+
+  .button {
+    font-size: 1.4em;
   }
 }
 
-@media only screen and (max-width: 880px) {
-  .text {
-    top: 10%;
-    left: 3%;
-    position: absolute;
+@media only screen and (max-width: 1180px) {
+  .text-content {
+    font-size: 2.5em;
+    height: 6.5vh;
+  }
+
+  .button {
+    font-size: 1.2em;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .mobile {
-    display: block;
+@media only screen and (max-width: 768px) {
+  .text-content {
+    font-size: 1.5em;
+    height: 3vh;
   }
-  .container {
+
+  .button {
     display: none;
   }
+}
+
+@media only screen and (max-width: 470px) {
   .text {
-    display: flex;
-    flex-direction: column;
-    height: 15%;
-    width: 100%;
-    justify-content: center;
-    top: 7%;
-  }
-  .text-content {
-    font-size: 1.7em;
-  }
-  .button {
-    font-size: 1.2em;
     display: block;
   }
-}
-
-@media screen and (max-width: 660px) {
-  .text {
-    top: 5%;
-    height: 13%;
-  }
   .text-content {
-    font-size: 1.2em;
-  }
-  .button {
     font-size: 1em;
   }
-}
 
-@media screen and (max-width: 460px) {
-  .text {
-    top: 5%;
-    height: 9%;
-  }
-  .text-content {
-    font-size: 1.2em;
-  }
   .button {
-    font-size: 1em;
+    display: none;
   }
 }

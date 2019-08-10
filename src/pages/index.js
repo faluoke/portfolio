@@ -26,7 +26,7 @@ export default props => (
       </div>
     </div>
 
-    <div className={indexStyle.mobile}>
+    {/* <div className={indexStyle.mobile}>
       <Img fluid={props.data.file.childImageSharp.fluid} />
       <div className={indexStyle.text}>
         <p className={indexStyle.textContent}>Hi, I am Faluoke</p>
@@ -40,7 +40,7 @@ export default props => (
           </a>
         </button>
       </div>
-    </div>
+    </div> */}
     <Project />
   </Layout>
 )
