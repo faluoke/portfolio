@@ -1,4 +1,6 @@
 import React from "react"
+
+import SEO from "../components/seo"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import resumeStyle from "./resume.module.css"
@@ -11,10 +13,11 @@ import php_logo from "../images/php.png"
 
 const Resume = () => (
   <Layout>
+    <SEO title="Resume" />
     <div className={resumeStyle.wrapper}>
       <div id="resume" className={resumeStyle.container}>
         <h2 className={resumeStyle.header}>About Me</h2>
-        <div className={resumeStyle.text}>
+        <div className={resumeStyle.experienceText}>
           <p>
             From the moment I produced “Hello World” in the browser with my
             first web page, I knew I was hooked into the world of web
@@ -64,27 +67,51 @@ const Resume = () => (
         <div className={resumeStyle.text}>
           <div>
             <h3>HTML</h3>
-            <img src={html_logo} className={resumeStyle.img}></img>
+            <img
+              src={html_logo}
+              alt="html logo"
+              className={resumeStyle.img}
+            ></img>
           </div>
           <div>
             <h3>CSS</h3>
-            <img src={css_logo} className={resumeStyle.img}></img>
+            <img
+              src={css_logo}
+              alt="css logo"
+              className={resumeStyle.img}
+            ></img>
           </div>
           <div>
             <h3>JavaScript</h3>
-            <img src={javascript_logo} className={resumeStyle.img}></img>
+            <img
+              src={javascript_logo}
+              alt="javascript logo"
+              className={resumeStyle.img}
+            ></img>
           </div>
           <div>
             <h3>React</h3>
-            <img src={react_logo} className={resumeStyle.img}></img>
+            <img
+              src={react_logo}
+              alt="react logo"
+              className={resumeStyle.img}
+            ></img>
           </div>
           <div>
             <h3>NodeJS</h3>
-            <img src={nodejs_logo} className={resumeStyle.img}></img>
+            <img
+              src={nodejs_logo}
+              alt="nodejs logo"
+              className={resumeStyle.img}
+            ></img>
           </div>
           <div>
             <h3>PHP</h3>
-            <img src={php_logo} className={resumeStyle.img}></img>
+            <img
+              src={php_logo}
+              alt="php logo"
+              className={resumeStyle.img}
+            ></img>
           </div>
         </div>
       </div>

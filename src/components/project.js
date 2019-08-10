@@ -1,4 +1,6 @@
 import React from "react"
+
+import SEO from "../components/seo"
 import projectStyle from "./project.module.css"
 import ecommerse_project from "../images/ecommerce_site.jpg"
 import twitter_project from "../images/twitter_site.jpg"
@@ -18,12 +20,15 @@ const Project = () => (
         <a
           href="http://ec2-3-17-143-15.us-east-2.compute.amazonaws.com/ecommerce"
           target="_blank"
+          rel="noopener noreferrer"
           className={projectStyle.link}
         >
           Visit
         </a>
         <a
           href="https://github.com/faluoke/faluoke.github.io"
+          target="_blank"
+          rel="noopener noreferrer"
           className={projectStyle.link}
         >
           Source Code
@@ -35,12 +40,15 @@ const Project = () => (
         <a
           href="http://ec2-3-17-143-15.us-east-2.compute.amazonaws.com/level2/ce/ce11/"
           target="_blank"
+          rel="noopener noreferrer"
           className={projectStyle.link}
         >
           Visit
         </a>
         <a
           href="https://github.com/faluoke/faluoke.github.io"
+          target="_blank"
+          rel="noopener noreferrer"
           className={projectStyle.link}
         >
           Source Code
@@ -52,12 +60,15 @@ const Project = () => (
         <a
           href="https://laughing-euler-d5c5a2.netlify.com"
           target="_blank"
+          rel="noopener noreferrer"
           className={projectStyle.link}
         >
           Visit
         </a>
         <a
           href="https://github.com/faluoke/faluoke.github.io"
+          target="_blank"
+          rel="noopener noreferrer"
           className={projectStyle.link}
         >
           Source Code
@@ -69,12 +80,15 @@ const Project = () => (
         <a
           href="https://vigorous-villani-be870c.netlify.com/"
           target="_blank"
+          rel="noopener noreferrer"
           className={projectStyle.link}
         >
           Visit
         </a>
         <a
           href="https://github.com/faluoke/faluoke.github.io"
+          target="_blank"
+          rel="noopener noreferrer"
           className={projectStyle.link}
         >
           Source Code
@@ -86,12 +100,15 @@ const Project = () => (
         <a
           href="https://faluoke.github.io/"
           target="_blank"
+          rel="noopener noreferrer"
           className={projectStyle.link}
         >
           Visit
         </a>
         <a
           href="https://github.com/faluoke/faluoke.github.io"
+          target="_blank"
+          rel="noopener noreferrer"
           className={projectStyle.link}
         >
           Source Code
