@@ -68,9 +68,9 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
-          name="google-site-verification",
-          content: `hS9ENA4fTfhRRPnQeKB6QoryYXzi_ZgTzChttctI3w0`
-        }
+          name: "google-site-verification",
+          content: `hS9ENA4fTfhRRPnQeKB6QoryYXzi_ZgTzChttctI3w0`,
+        },
       ].concat(meta)}
     />
   )

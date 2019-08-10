@@ -1,6 +1,4 @@
 import React from "react"
-
-import SEO from "../components/seo"
 import projectStyle from "./project.module.css"
 import ecommerse_project from "../images/ecommerce_site.jpg"
 import twitter_project from "../images/twitter_site.jpg"
