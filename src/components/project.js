@@ -24,7 +24,7 @@ const Project = () => (
           Visit
         </a>
         <a
-          href="https://github.com/faluoke/faluoke.github.io"
+          href="https://github.com/faluoke/an-online-shop"
           target="_blank"
           rel="noopener noreferrer"
           className={projectStyle.link}
