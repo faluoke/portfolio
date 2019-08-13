@@ -33,7 +33,7 @@ const Project = () => (
         </a>
       </div>
       <div className={projectStyle}>
-        <h2>Twitter Replaca</h2>
+        <h2>Twitter Replica</h2>
         <img src={twitter_project} alt="" />
         <a
           href="http://ec2-3-17-143-15.us-east-2.compute.amazonaws.com/level2/ce/ce11/"
@@ -44,7 +44,7 @@ const Project = () => (
           Visit
         </a>
         <a
-          href="https://github.com/faluoke/faluoke.github.io"
+          href="https://github.com/faluoke/twitter-replica"
           target="_blank"
           rel="noopener noreferrer"
           className={projectStyle.link}
@@ -64,7 +64,7 @@ const Project = () => (
           Visit
         </a>
         <a
-          href="https://github.com/faluoke/faluoke.github.io"
+          href="https://github.com/faluoke/a-simple-blog"
           target="_blank"
           rel="noopener noreferrer"
           className={projectStyle.link}
@@ -84,7 +84,7 @@ const Project = () => (
           Visit
         </a>
         <a
-          href="https://github.com/faluoke/faluoke.github.io"
+          href="https://github.com/faluoke/curly-garbanzo"
           target="_blank"
           rel="noopener noreferrer"
           className={projectStyle.link}

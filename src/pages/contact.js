@@ -10,10 +10,8 @@ export default () => (
       name="contact"
       method="post"
       data-netlify="true"
-      netlify-honeypot="bot-field"
       className={contactStyle.container}
     >
-      <input type="hidden" name="bot-field" id="name" />
       <label>
         Name
         <input
