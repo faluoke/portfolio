@@ -77,7 +77,7 @@ const Resume = () => (
           <div className={resumeStyle.experienceText}>
             <h3>Helio Training</h3>
             <h4>Full Stack Web Development</h4>
-            <p>2019-2021</p>
+            <p>2019-2020</p>
           </div>
           <div className={resumeStyle.experienceText}>
             <h3>Salt Lake Community College</h3>
