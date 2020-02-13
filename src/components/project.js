@@ -1,11 +1,11 @@
 import React from "react"
 import projectStyle from "./project.module.css"
 import budget_site from "../images/budget_site.jpg"
+import master_blog from "../images/master_blog.jpg"
 import ecommerse_project from "../images/ecommerce_site.jpg"
 import twitter_project from "../images/twitter_site.jpg"
 import blog_project from "../images/blog_site.jpg"
 import tetris_project from "../images/tetris_site.jpg"
-import vr_project from "../images/vr_site.jpg"
 
 const Project = () => (
   <div>
@@ -14,7 +14,7 @@ const Project = () => (
     </h1>
     <div className={projectStyle.container}>
       <div className={projectStyle}>
-        <h2>Budget App</h2>
+        <h2>Full Stack Budget App</h2>
         <img src={budget_site} alt="" />
         <a
           href="https://unruffled-allen-850709.netlify.com/"
@@ -26,6 +26,26 @@ const Project = () => (
         </a>
         <a
           href="https://github.com/faluoke/budget-app-ui"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={projectStyle.link}
+        >
+          Source Code
+        </a>
+      </div>
+      <div className={projectStyle}>
+        <h2>Full Stack Blog</h2>
+        <img src={master_blog} alt="" />
+        <a
+          href="https://mirzakhani-3b28e3.netlify.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={projectStyle.link}
+        >
+          Visit
+        </a>
+        <a
+          href="https://github.com/faluoke/master-blog-frontend"
           target="_blank"
           rel="noopener noreferrer"
           className={projectStyle.link}
@@ -73,26 +93,7 @@ const Project = () => (
           Source Code
         </a>
       </div>
-      <div className={projectStyle}>
-        <h2>Simple Blog</h2>
-        <img src={blog_project} alt="" />
-        <a
-          href="https://laughing-euler-d5c5a2.netlify.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={projectStyle.link}
-        >
-          Visit
-        </a>
-        <a
-          href="https://github.com/faluoke/a-simple-blog"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={projectStyle.link}
-        >
-          Source Code
-        </a>
-      </div>
+
       <div className={projectStyle}>
         <h2>Tetris Project</h2>
         <img src={tetris_project} alt="" className={projectStyle.img} />
@@ -114,10 +115,10 @@ const Project = () => (
         </a>
       </div>
       <div className={projectStyle}>
-        <h2>VR Experience Site</h2>
-        <img src={vr_project} alt="" className={projectStyle.img} />
+        <h2>Simple Blog</h2>
+        <img src={blog_project} alt="" />
         <a
-          href="https://faluoke.github.io/"
+          href="https://laughing-euler-d5c5a2.netlify.com"
           target="_blank"
           rel="noopener noreferrer"
           className={projectStyle.link}
@@ -125,7 +126,7 @@ const Project = () => (
           Visit
         </a>
         <a
-          href="https://github.com/faluoke/faluoke.github.io"
+          href="https://github.com/faluoke/a-simple-blog"
           target="_blank"
           rel="noopener noreferrer"
           className={projectStyle.link}
