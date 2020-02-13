@@ -1,5 +1,6 @@
 import React from "react"
 import projectStyle from "./project.module.css"
+import budget_site from "../images/budget_site.jpg"
 import ecommerse_project from "../images/ecommerce_site.jpg"
 import twitter_project from "../images/twitter_site.jpg"
 import blog_project from "../images/blog_site.jpg"
@@ -12,6 +13,26 @@ const Project = () => (
       Projects
     </h1>
     <div className={projectStyle.container}>
+      <div className={projectStyle}>
+        <h2>Budget App</h2>
+        <img src={budget_site} alt="" />
+        <a
+          href="https://unruffled-allen-850709.netlify.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={projectStyle.link}
+        >
+          Visit
+        </a>
+        <a
+          href="https://github.com/faluoke/budget-app-ui"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={projectStyle.link}
+        >
+          Source Code
+        </a>
+      </div>
       <div className={projectStyle}>
         <h2>Ecommerse Site</h2>
         <img src={ecommerse_project} alt="" />

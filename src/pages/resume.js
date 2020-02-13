@@ -16,53 +16,6 @@ const Resume = () => (
     <SEO title="Resume" />
     <div className={resumeStyle.wrapper}>
       <div id="resume" className={resumeStyle.container}>
-        <h2 className={resumeStyle.header}>About Me</h2>
-        <div className={resumeStyle.experienceText}>
-          <p>
-            From the moment I produced “Hello World” in the browser with my
-            first web page, I knew I was hooked into the world of web
-            development. But web development has never been “just a job” for me,
-            it’s offered an engaging challenge to continually learn and improve
-            my skills in creating high-quality application. What started with a
-            simple “Hello World” has become a full-fledged passion that only
-            gets more exciting as the years go by. <br />
-            <span>
-              <Link to="/#projects" className={resumeStyle.link}>
-                Here{" "}
-              </Link>
-            </span>
-            you will find projects I’ve completed that showcase my skills and
-            general background in developing webpages and applications.
-          </p>
-        </div>
-        <h2 className={[resumeStyle.header]}>Experience</h2>
-        <div>
-          <div className={resumeStyle.experienceText}>
-            <h3>IT Technician II</h3>
-            <p>Extra Space Storage</p>
-          </div>
-          <div className={resumeStyle.experienceText}>
-            <h3>Data Entry Clerk</h3>
-            <p>Discover Financial Services</p>
-          </div>
-          <div className={resumeStyle.experienceText}>
-            <h3>Language Tutor</h3>
-            <p>Salt Lake Community College</p>
-          </div>
-        </div>
-        <h2 className={[resumeStyle.header]}>Education</h2>
-        <div>
-          <div className={resumeStyle.experienceText}>
-            <h3>Brigham Young University</h3>
-            <h4>Bachelor's Degree</h4>
-            <p>2019-2021</p>
-          </div>
-          <div className={resumeStyle.experienceText}>
-            <h3>Salt Lake Community College</h3>
-            <h4>Associate's Degree</h4>
-            <p>2017-2019</p>
-          </div>
-        </div>
         <h2 className={[resumeStyle.header]}>Skills</h2>
         <div className={resumeStyle.text}>
           <div>
@@ -113,6 +66,58 @@ const Resume = () => (
               className={resumeStyle.img}
             ></img>
           </div>
+        </div>
+        <h2 className={[resumeStyle.header]}>Education</h2>
+        <div>
+          <div className={resumeStyle.experienceText}>
+            <h3>Brigham Young University</h3>
+            <h4>Bachelor's Degree</h4>
+            <p>2019-2021</p>
+          </div>
+          <div className={resumeStyle.experienceText}>
+            <h3>Helio Training</h3>
+            <h4>Full Stack Web Development</h4>
+            <p>2019-2021</p>
+          </div>
+          <div className={resumeStyle.experienceText}>
+            <h3>Salt Lake Community College</h3>
+            <h4>Associate's Degree</h4>
+            <p>2017-2019</p>
+          </div>
+        </div>
+        <h2 className={[resumeStyle.header]}>Experience</h2>
+        <div>
+          <div className={resumeStyle.experienceText}>
+            <h3>IT Technician II</h3>
+            <p>Extra Space Storage</p>
+          </div>
+          <div className={resumeStyle.experienceText}>
+            <h3>Data Entry Clerk</h3>
+            <p>Discover Financial Services</p>
+          </div>
+          <div className={resumeStyle.experienceText}>
+            <h3>Language Tutor</h3>
+            <p>Salt Lake Community College</p>
+          </div>
+        </div>
+        <h2 className={[resumeStyle.header]}>About Me</h2>
+        <div className={resumeStyle.experienceText}>
+          <p>
+            From the moment I produced “Hello World” in the browser with my
+            first web page, I knew I was hooked into the world of web
+            development. But web development has never been “just a job” for me,
+            it’s offered an engaging challenge to continually learn and improve
+            my skills in creating high-quality application. What started with a
+            simple “Hello World” has become a full-fledged passion that only
+            gets more exciting as the years go by. <br />
+            <span>
+              <Link to="/#projects" className={resumeStyle.link}>
+                Here
+              </Link>
+            </span>
+            you will find projects I’ve completed that showcase my skills and
+            general background in developing webpages and applications.
+          </p>
         </div>
       </div>
     </div>
