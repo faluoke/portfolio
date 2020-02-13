@@ -8,8 +8,8 @@ export default () => (
     <SEO title="Contact" />
     <form
       name="contact"
-      method="post"
-      data-netlify="true"
+      action="https://formspree.io/mrgqjqng"
+      method="POST"
       className={contactStyle.container}
     >
       <label>
@@ -27,6 +27,15 @@ export default () => (
           type="email"
           name="email"
           id="email"
+          className={contactStyle.input}
+        />
+      </label>
+      <label>
+        Phone
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
           className={contactStyle.input}
         />
       </label>
