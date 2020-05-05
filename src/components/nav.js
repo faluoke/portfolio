@@ -1,6 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 import navStyle from "./nav.module.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
 
 const Nav = () => (
   <header className={navStyle.header}>
@@ -30,6 +32,15 @@ const Nav = () => (
           <Link to="/contact" className={navStyle.navItems}>
             Contact
           </Link>
+        </li>
+        <li>
+          <a
+            href="https://github.com/faluoke"
+            target="_blank"
+            className={navStyle.navItems}
+          >
+            <FontAwesomeIcon icon={faGithub} /> GitHub
+          </a>
         </li>
       </ul>
     </nav>
