@@ -13,16 +13,14 @@ export default props => (
     <div className={indexStyle.container}>
       <Img fluid={props.data.file.childImageSharp.fluid} />
       <div className={indexStyle.text}>
-        <p className={indexStyle.textContent}>Hi, I am Faluoke</p>
+        <p className={indexStyle.textContent}>Hi, I am</p>
         <p className={indexStyle.textContent}>A developer, and a CS student</p>
-        <p className={indexStyle.textContent}>
-          Currently living in Salt Lake City
-        </p>
-        <button className={indexStyle.button}>
-          <a className={indexStyle.button} href="#projects">
-            Check Out My Projects
-          </a>
-        </button>
+        <p className={indexStyle.textContent}>Living in Salt Lake City, Utah</p>
+        <div>
+          <button className={indexStyle.button}>
+            <a href="#projects">Check Out My Projects</a>
+          </button>
+        </div>
       </div>
     </div>
     <Project />

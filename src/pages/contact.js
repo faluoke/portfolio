@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import "../pages/mystyles.scss"
 import contactStyle from "./contact.module.css"
 
 export default () => (
@@ -10,63 +11,76 @@ export default () => (
       name="contact"
       action="https://formspree.io/mrgqjqng"
       method="POST"
-      className={contactStyle.container}
+      className={`container ${contactStyle.container}`}
     >
-      <label>
-        Name
-        <input
-          type="text"
-          name="name"
-          id="name"
-          className={contactStyle.input}
-        />
-      </label>
-      <label>
-        Email
-        <input
-          type="email"
-          name="email"
-          id="email"
-          className={contactStyle.input}
-        />
-      </label>
-      <label>
-        Phone
-        <input
-          type="tel"
-          name="phone"
-          id="phone"
-          className={contactStyle.input}
-        />
-      </label>
-      <label>
-        Subject
-        <input
-          type="text"
-          name="subject"
-          id="subject"
-          className={contactStyle.input}
-        />
-      </label>
-      <label>
-        Message
-        <textarea
-          name="message"
-          id="message"
-          rows="6"
-          cols="22"
-          className={contactStyle.input}
-        />
-      </label>
-      <div className={contactStyle.buttonContainer}>
-        <button type="submit" className={contactStyle.button}>
-          Send
-        </button>
-        <input
-          type="reset"
-          value="Clear"
-          className={contactStyle.clearButton}
-        />
+      <div className="field">
+        <label htmlFor="name" className="label">
+          Name
+        </label>
+        <div className="control">
+          <input type="text" name="name" id="name" className="input" required />
+        </div>
+      </div>
+      <div className="field">
+        <label htmlFor="email" className="label">
+          Email
+        </label>
+        <div className="control">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            className="input"
+            required
+          />
+        </div>
+      </div>
+      <div className="field">
+        <label htmlFor="phone" className="label">
+          Phone
+        </label>
+        <div className="control">
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            className="input"
+            required
+          />
+        </div>
+      </div>
+      <div className="field">
+        <label htmlFor="subject" className="label">
+          Subject
+        </label>
+        <div className="control">
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            className="input"
+            required
+          />
+        </div>
+      </div>
+      <div className="field">
+        <label htmlFor="message" className="label">
+          Message
+        </label>
+        <div className="control">
+          <textarea name="message" id="message" className="textarea" required />
+        </div>
+      </div>
+
+      <div className="field is-grouped is-grouped-centered">
+        <p className="control">
+          <button className="button is-primary">Submit</button>
+        </p>
+        <p className="control">
+          <button type="reset" className="button is-light">
+            Clear
+          </button>
+        </p>
       </div>
     </form>
   </Layout>

@@ -70,7 +70,7 @@ const Resume = () => (
         <h2 className={[resumeStyle.header]}>Education</h2>
         <div>
           <div className={resumeStyle.experienceText}>
-            <h3>Brigham Young University</h3>
+            <h3>Western Governors University</h3>
             <h4>Bachelor's Degree</h4>
             <p>2019-2021</p>
           </div>

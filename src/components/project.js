@@ -73,7 +73,7 @@ const Project = () => (
           Source Code
         </a>
       </div>
-      <div className={projectStyle}>
+      {/* <div className={projectStyle}>
         <h2>Twitter Replica</h2>
         <img src={twitter_project} alt="" />
         <a
@@ -133,7 +133,7 @@ const Project = () => (
         >
           Source Code
         </a>
-      </div>
+      </div> */}
     </div>
   </div>
 )

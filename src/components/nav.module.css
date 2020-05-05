@@ -45,6 +45,7 @@
     display: flex;
     list-style: none;
     flex-direction: row;
+    justify-content: space-around;
   }
   .mobile-nav-items {
     color: white;

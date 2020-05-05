@@ -19,7 +19,9 @@
   color: rgb(255, 255, 255);
 }
 
-.button {
+.button,
+.button a {
+  margin: 0 auto;
   display: flex;
   cursor: pointer;
   border-style: none;
@@ -27,7 +29,6 @@
   background: lightblue;
   padding: 0.3em;
   text-decoration: none;
-  font-size: 1.5em;
   color: rgb(4, 108, 150);
 }
 
